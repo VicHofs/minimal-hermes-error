@@ -18,7 +18,7 @@ const RootLayout = () => {
       try {
         await tf.ready();
         // ! the following line is causing the `'viewManagersMetadata' doesn't exist` error somehow
-        // const model = await loadModel("my-model");
+        const model = await loadModel("my-model");
       } catch (err) {
         console.error("error loading tf model:", err);
       }
